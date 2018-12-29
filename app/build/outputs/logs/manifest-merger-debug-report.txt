@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\cdf76782deb57775c733c34d17bc5014\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\784136cc9161358e79c39ae9e2b29229\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\74675c83d16e48a159147adda82b327d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\ef81d328ab67c7a64f6d27811bd2a9f7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\4533d33663ad45fe7fea87512ddc2f24\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\87987a3508ec44fe9814b3cbd76d023d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\98faeb74137d02f45e8645e39e43f085\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b3c3dda5c025f413fa990d736f742f9f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c40b1da8efb8431428622921650013d8\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\bc897956d38f5bf28965a79dc7b41586\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b93b0adbeb3117bc21b97437843509bb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\03b56367e14bb26c9ab25f90db88929e\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\784136cc9161358e79c39ae9e2b29229\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\784136cc9161358e79c39ae9e2b29229\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.spydey.prototypeone.MainActivity
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:16:27-74
+activity#com.example.spydey.prototypeone.SignupActivity
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:19:9-61
+	android:name
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:19:19-49
+uses-sdk
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\cdf76782deb57775c733c34d17bc5014\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\cdf76782deb57775c733c34d17bc5014\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\784136cc9161358e79c39ae9e2b29229\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\784136cc9161358e79c39ae9e2b29229\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\74675c83d16e48a159147adda82b327d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\74675c83d16e48a159147adda82b327d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\ef81d328ab67c7a64f6d27811bd2a9f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\ef81d328ab67c7a64f6d27811bd2a9f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\4533d33663ad45fe7fea87512ddc2f24\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\4533d33663ad45fe7fea87512ddc2f24\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\87987a3508ec44fe9814b3cbd76d023d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\87987a3508ec44fe9814b3cbd76d023d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\98faeb74137d02f45e8645e39e43f085\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\98faeb74137d02f45e8645e39e43f085\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b3c3dda5c025f413fa990d736f742f9f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b3c3dda5c025f413fa990d736f742f9f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c40b1da8efb8431428622921650013d8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\c40b1da8efb8431428622921650013d8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\bc897956d38f5bf28965a79dc7b41586\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\bc897956d38f5bf28965a79dc7b41586\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b93b0adbeb3117bc21b97437843509bb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b93b0adbeb3117bc21b97437843509bb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\03b56367e14bb26c9ab25f90db88929e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\03b56367e14bb26c9ab25f90db88929e\AndroidManifest.xml:20:5-44
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
