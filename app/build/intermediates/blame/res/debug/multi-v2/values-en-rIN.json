@@ -4,7 +4,7 @@
             "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\cdf76782deb57775c733c34d17bc5014\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\92bbabdc8c4cbfc0a973154c7d289c99\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\b3c3dda5c025f413fa990d736f742f9f\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\f53c4174dba9ecdb7e5aaa83607cefba\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
