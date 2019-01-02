@@ -11,6 +11,8 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+array dibetic
+array gender
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -706,6 +708,17 @@ id adjust_width
 id alertTitle
 id all
 id always
+id analyseAge
+id analyseAgeEditText
+id analyseBloodPressure
+id analyseBloodPressureEditText
+id analyseDiabetes
+id analyseDiabetesSpinner
+id analyseHeight
+id analyseHeightEditText
+id analyseWeight
+id analyseWeightEditText
+id analysisbutton
 id async
 id auto
 id barrier
@@ -745,6 +758,7 @@ id fill_horizontal
 id fill_vertical
 id firstname_field
 id forever
+id gender_spinner
 id gone
 id groups
 id home
@@ -786,6 +800,7 @@ id phone_field
 id progress_circular
 id progress_horizontal
 id radio
+id recordsbutton
 id right
 id right_icon
 id right_side
@@ -874,6 +889,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_analyse
 layout activity_home
 layout activity_main
 layout activity_signup

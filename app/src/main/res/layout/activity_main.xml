@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:layout_marginLeft="30dp"
-    android:layout_marginRight="30dp"
-    android:layout_marginTop="100dp">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+
         android:orientation="vertical"
         >
 
@@ -23,7 +25,8 @@
             android:fontFamily="monospace"
             android:textStyle="bold"
             android:gravity="center"
-            android:paddingBottom="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="10dp"
             android:inputType="textShortMessage"
             android:text="GSCC"
             android:textSize="50dp"
@@ -62,7 +65,7 @@
             android:onClick="onClickRegister"
             android:text="@string/signup_link"
             android:gravity="center_horizontal"
-            android:paddingTop="20dp"
+            android:layout_marginTop="20dp"
             />
     </LinearLayout>
 
