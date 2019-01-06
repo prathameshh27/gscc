@@ -519,6 +519,8 @@ color material_grey_600
 color material_grey_800
 color material_grey_850
 color material_grey_900
+color navDrawer
+color navHeader
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
@@ -812,8 +814,12 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_analysis
+drawable ic_displaypicture
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_records
+drawable ic_signout
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -871,6 +877,7 @@ id analyseHeight
 id analyseHeightEditText
 id analyseWeight
 id analyseWeightEditText
+id analysisMenuButton
 id analysisbutton
 id async
 id auto
@@ -906,6 +913,8 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id drawer_layout
+id dummy_navbar_layout
 id edit_query
 id email2_field
 id email_field
@@ -922,6 +931,7 @@ id fill_vertical
 id firstname_field
 id fixed
 id forever
+id fragment_container
 id gender_spinner
 id ghost_view
 id gone
@@ -947,12 +957,14 @@ id listMode
 id list_item
 id login_button
 id logo_text
+id logoutbutton
 id masked
 id media_actions
 id message
 id middle
 id mini
 id multiply
+id nav_view
 id navigation_header_container
 id never
 id none
@@ -973,6 +985,7 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id recordsMenuButton
 id recordsbutton
 id right
 id right_icon
@@ -1001,6 +1014,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signoutMenuButton
 id signup_button
 id signup_text
 id smallLabel
@@ -1032,6 +1046,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1090,6 +1105,7 @@ layout abc_tooltip
 layout activity_analyse
 layout activity_home
 layout activity_main
+layout activity_navbar
 layout activity_signup
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1105,6 +1121,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout nav_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1124,6 +1141,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu drawer_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
@@ -1185,6 +1203,8 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string login_button
+string navigation_drawer_close
+string navigation_drawer_open
 string password_hint
 string password_toggle_content_description
 string path_password_eye
@@ -1203,6 +1223,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
+style AppTheme_NoActionBar
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog

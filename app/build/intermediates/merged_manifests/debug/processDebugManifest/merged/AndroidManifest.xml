@@ -31,8 +31,15 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.spydey.prototypeone.SignupActivity" />
-        <activity android:name="com.example.spydey.prototypeone.HomeActivity" />
-        <activity android:name="com.example.spydey.prototypeone.AnalyseActivity" />
+        <activity
+            android:name="com.example.spydey.prototypeone.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.spydey.prototypeone.AnalyseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.spydey.prototypeone.NavbarActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

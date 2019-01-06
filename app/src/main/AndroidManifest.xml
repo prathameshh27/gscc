@@ -19,8 +19,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignupActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".AnalyseActivity"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AnalyseActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".NavbarActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
     </application>
 
 </manifest>
