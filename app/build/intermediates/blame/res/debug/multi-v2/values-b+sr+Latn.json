@@ -4,24 +4,7 @@
             "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+sr+Latn\\values-b+sr+Latn.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\92bbabdc8c4cbfc0a973154c7d289c99\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,318,424,510,614,732,814,895,983,1089,1197,1298,1403,1511,1612,1781,1878",
-                        "endColumns": "108,103,105,85,103,117,81,80,87,105,107,100,104,107,100,168,96,83",
-                        "endOffsets": "209,313,419,505,609,727,809,890,978,1084,1192,1293,1398,1506,1607,1776,1873,1957"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,318,424,510,614,732,814,895,983,1089,1197,1298,1403,1511,1612,1781,4537",
-                        "endColumns": "108,103,105,85,103,117,81,80,87,105,107,100,104,107,100,168,96,83",
-                        "endOffsets": "209,313,419,505,609,727,809,890,978,1084,1192,1293,1398,1506,1607,1776,1873,4616"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\4850df1bf25c4d7b33c59dc73b9aec71\\res\\values-b+sr+Latn\\values.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\52353450ac679be1e572910b20e99dab\\res\\values-b+sr+Latn\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,24 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\f53c4174dba9ecdb7e5aaa83607cefba\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\172acff50f67fc58e8cba0c24d8a34bb\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,318,424,510,614,732,814,895,983,1089,1197,1298,1403,1511,1612,1781,1878",
+                        "endColumns": "108,103,105,85,103,117,81,80,87,105,107,100,104,107,100,168,96,83",
+                        "endOffsets": "209,313,419,505,609,727,809,890,978,1084,1192,1293,1398,1506,1607,1776,1873,1957"
                     },
                     "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4621",
-                        "endColumns": "100",
-                        "endOffsets": "4717"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,318,424,510,614,732,814,895,983,1089,1197,1298,1403,1511,1612,1781,4537",
+                        "endColumns": "108,103,105,85,103,117,81,80,87,105,107,100,104,107,100,168,96,83",
+                        "endOffsets": "209,313,419,505,609,727,809,890,978,1084,1192,1293,1398,1506,1607,1776,1873,4616"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\42e415321770c3f72838b576239da87b\\res\\values-b+sr+Latn\\values.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\266082f7fb2087cc385c6f906a2f0aba\\res\\values-b+sr+Latn\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,6 +52,23 @@
                         "startOffsets": "1878,1986,2174,2302,2414,2627,2756,2898,3218,3426,3535,3726,3855,4063,4235,4333,4428",
                         "endColumns": "107,187,127,111,212,128,141,130,207,108,190,128,207,171,97,94,108",
                         "endOffsets": "1981,2169,2297,2409,2622,2751,2893,3024,3421,3530,3721,3850,4058,4230,4328,4423,4532"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\7ff853e1d43a621fed4afcde164e0ae8\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4621",
+                        "endColumns": "100",
+                        "endOffsets": "4717"
                     }
                 }
             ]

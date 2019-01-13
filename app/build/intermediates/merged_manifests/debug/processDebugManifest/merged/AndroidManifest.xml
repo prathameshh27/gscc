@@ -23,23 +23,35 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.spydey.prototypeone.MainActivity" >
+        <activity
+            android:name="com.example.spydey.prototypeone.SplashActivity"
+            android:theme="@style/SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.spydey.prototypeone.MainActivity" >
+            <intent-filter android:label="@string/app_name" >
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.spydey.prototypeone.SignupActivity" />
         <activity
             android:name="com.example.spydey.prototypeone.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.example.spydey.prototypeone.AnalyseActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.example.spydey.prototypeone.NavbarActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- <activity -->
+        <!-- android:name=".AnalyseActivity" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".NavbarActivity" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <!--  -->
+
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

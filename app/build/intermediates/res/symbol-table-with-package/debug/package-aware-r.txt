@@ -465,12 +465,14 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color brown
 color button_material_dark
 color button_material_light
 color colorAccent
@@ -502,11 +504,14 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color drawer_item
+color drawer_text_icon
 color error_color_material
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -546,6 +551,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -833,6 +839,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable splash_screen
+drawable splash_screen_icon
+drawable splash_screen_icon_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -873,12 +882,12 @@ id analyseBloodPressure
 id analyseBloodPressureEditText
 id analyseDiabetes
 id analyseDiabetesSpinner
+id analyseFragmentButton
 id analyseHeight
 id analyseHeightEditText
 id analyseWeight
 id analyseWeightEditText
 id analysisMenuButton
-id analysisbutton
 id async
 id auto
 id barrier
@@ -914,7 +923,6 @@ id dimensions
 id direct
 id disableHome
 id drawer_layout
-id dummy_navbar_layout
 id edit_query
 id email2_field
 id email_field
@@ -957,7 +965,6 @@ id listMode
 id list_item
 id login_button
 id logo_text
-id logoutbutton
 id masked
 id media_actions
 id message
@@ -965,6 +972,8 @@ id middle
 id mini
 id multiply
 id nav_view
+id navheader_fullusername
+id navheader_username
 id navigation_header_container
 id never
 id none
@@ -986,7 +995,6 @@ id progress_circular
 id progress_horizontal
 id radio
 id recordsMenuButton
-id recordsbutton
 id right
 id right_icon
 id right_side
@@ -1102,10 +1110,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_analyse
 layout activity_home
 layout activity_main
-layout activity_navbar
 layout activity_signup
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1121,6 +1127,8 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_analyse
+layout fragment_records
 layout nav_header
 layout notification_action
 layout notification_action_tombstone
@@ -1143,6 +1151,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu drawer_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -1202,6 +1211,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string login_button
 string navigation_drawer_close
 string navigation_drawer_open
@@ -1406,6 +1416,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style SplashScreen
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2

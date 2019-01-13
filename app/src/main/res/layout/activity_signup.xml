@@ -21,7 +21,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Firstname"
-            android:text="Prathamesh"
             android:inputType="textPersonName"
             />
 
@@ -30,7 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Lastname"
-            android:text="Pavnoji"
             android:inputType="textPersonName"
             />
 
@@ -39,7 +37,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone No."
-            android:text="9999999999"
             android:inputType="phone"
             />
 
@@ -48,7 +45,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:text="prathameshh27@gmail.com"
             android:inputType="textEmailAddress"
             />
 
@@ -57,7 +53,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:text="abc123"
             android:inputType="textPassword"
             />
 
@@ -66,7 +61,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Birthdate"
-            android:text="27/03/1997"
             android:inputType="date"
             />
         <TextView

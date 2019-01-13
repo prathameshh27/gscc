@@ -4,7 +4,7 @@
             "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\92bbabdc8c4cbfc0a973154c7d289c99\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\172acff50f67fc58e8cba0c24d8a34bb\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c84ece9ef5edb9f31ad869cbe119d2fe\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\d317b6c37638d6361eee4d161342b19f\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",
