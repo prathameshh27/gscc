@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item android:checked="true"
+            android:id="@+id/recordsMenuButton"
+            android:icon="@drawable/ic_records"
+            android:title="View records" />
+
+        <item
+            android:id="@+id/analysisMenuButton"
+            android:icon="@drawable/ic_analysis"
+            android:title="Perform Analysis" />
+    </group>
+
+        <item
+            android:id="@+id/signoutMenuButton"
+            android:icon="@drawable/ic_signout"
+            android:title="Log Out" />
+
+</menu>

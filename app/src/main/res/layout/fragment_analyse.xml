@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.spydey.prototypeone.AnalyseFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/analyseDiabetes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have diabetes?" />
+
+            <Spinner
+                android:id="@+id/analyseDiabetesSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/analyseDiabetes"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/analyseBloodPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseDiabetesSpinner"
+                android:layout_marginTop="20dp"
+                android:text="Enter Blood Pressure" />
+
+            <EditText
+                android:id="@+id/analyseBloodPressureEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseBloodPressure"
+                android:layout_marginTop="10dp"
+                android:inputType="number" />
+
+
+            <TextView
+                android:id="@+id/analyseHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseBloodPressureEditText"
+                android:layout_marginTop="20dp"
+                android:text="Enter Height (In inches)" />
+
+            <EditText
+                android:id="@+id/analyseHeightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseHeight"
+                android:layout_marginTop="10dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/analyseWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseHeightEditText"
+                android:layout_marginTop="20dp"
+                android:text="Enter weight (In KG)" />
+
+            <EditText
+                android:id="@+id/analyseWeightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseWeight"
+                android:layout_marginTop="10dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/analyseAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseWeightEditText"
+                android:layout_marginTop="20dp"
+                android:text="Enter Age" />
+
+            <EditText
+                android:id="@+id/analyseAgeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseAge"
+                android:layout_marginTop="10dp"
+                android:inputType="number" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseAgeEditText"
+                android:layout_marginTop="20dp"
+                android:id="@+id/analyseFragmentButton"
+                android:text="Analyse" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

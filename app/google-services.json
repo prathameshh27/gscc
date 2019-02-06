@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "492448419365",
+    "firebase_url": "https://gscc-prototypeone.firebaseio.com",
+    "project_id": "gscc-prototypeone",
+    "storage_bucket": "gscc-prototypeone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492448419365:android:fb1a7ef15ef474da",
+        "android_client_info": {
+          "package_name": "com.example.spydey.prototypeone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492448419365-qkkvbvrvudk9f2kjhvqtfeotrkqve707.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spydey.prototypeone",
+            "certificate_hash": "7b6d7e1ba3c96df232c9fd04a5853af6f2065b7f"
+          }
+        },
+        {
+          "client_id": "492448419365-q1t22anggcgvfugg8joagafnkoeiuqk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXkXSr25JdsyVHmuuOn0DPgyB-cOZksYk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492448419365-q1t22anggcgvfugg8joagafnkoeiuqk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
