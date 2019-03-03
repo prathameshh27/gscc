@@ -4,7 +4,7 @@
             "outputFile": "D:\\WarMachine\\Coding\\Android_workstation\\prototypeOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ur\\values-ur.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\266082f7fb2087cc385c6f906a2f0aba\\res\\values-ur\\values.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\54caa668022003b864ba3f7a34cf1bd1\\res\\values-ur\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\52353450ac679be1e572910b20e99dab\\res\\values-ur\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "210",
-                        "endOffsets": "457"
-                    },
-                    "to": {
-                        "startLines": "27",
-                        "startColumns": "4",
-                        "startOffsets": "3028",
-                        "endColumns": "210",
-                        "endOffsets": "3234"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\7ff853e1d43a621fed4afcde164e0ae8\\res\\values-ur\\values-ur.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\802aebe2e92d28618a6e31d8ea954b67\\res\\values-ur\\values-ur.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\172acff50f67fc58e8cba0c24d8a34bb\\res\\values-ur\\values-ur.xml",
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\399ff9febaac809c797f3004a69e10dd\\res\\values-ur\\values-ur.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "105,215,321,430,516,620,740,816,892,977,1085,1194,1296,1407,1507,1615,1780,4606",
                         "endColumns": "109,105,108,85,103,119,75,75,84,107,108,101,110,99,107,164,97,79",
                         "endOffsets": "210,316,425,511,615,735,811,887,972,1080,1189,1291,1402,1502,1610,1775,1873,4681"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Prathamesh Pavnoji\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\6ca096919867ff7bdb865b832050d01a\\res\\values-ur\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "210",
+                        "endOffsets": "457"
+                    },
+                    "to": {
+                        "startLines": "27",
+                        "startColumns": "4",
+                        "startOffsets": "3028",
+                        "endColumns": "210",
+                        "endOffsets": "3234"
                     }
                 }
             ]

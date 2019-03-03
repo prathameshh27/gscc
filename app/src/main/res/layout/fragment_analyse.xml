@@ -15,14 +15,14 @@
             android:paddingBottom="30dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-
             >
 
             <TextView
                 android:id="@+id/analyseDiabetes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Do you have diabetes?" />
+                android:text="Do you have diabetes?"
+                android:paddingLeft="5dp" />
 
             <Spinner
                 android:id="@+id/analyseDiabetesSpinner"
@@ -30,15 +30,35 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/analyseDiabetes"
                 android:layout_marginTop="10dp"
-                />
+                android:background="@drawable/rounded_spinner"/>
+
+            <TextView
+                android:id="@+id/analyseHeartRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseDiabetesSpinner"
+                android:layout_marginTop="20dp"
+                android:text="Enter Heart Rate"
+                android:paddingLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/analyseHeartRateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseHeartRate"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext" />
+
 
             <TextView
                 android:id="@+id/analyseBloodPressure"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/analyseDiabetesSpinner"
+                android:layout_below="@id/analyseHeartRateEditText"
                 android:layout_marginTop="20dp"
-                android:text="Enter Blood Pressure" />
+                android:text="Enter Blood Pressure"
+                android:paddingLeft="5dp" />
 
             <EditText
                 android:id="@+id/analyseBloodPressureEditText"
@@ -46,7 +66,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/analyseBloodPressure"
                 android:layout_marginTop="10dp"
-                android:inputType="number" />
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"/>
 
 
             <TextView
@@ -55,7 +76,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/analyseBloodPressureEditText"
                 android:layout_marginTop="20dp"
-                android:text="Enter Height (In inches)" />
+                android:text="Enter Height (In inches)"
+                android:paddingLeft="5dp" />
 
             <EditText
                 android:id="@+id/analyseHeightEditText"
@@ -63,7 +85,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/analyseHeight"
                 android:layout_marginTop="10dp"
-                android:inputType="number" />
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"/>
 
             <TextView
                 android:id="@+id/analyseWeight"
@@ -71,7 +94,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/analyseHeightEditText"
                 android:layout_marginTop="20dp"
-                android:text="Enter weight (In KG)" />
+                android:text="Enter weight (In KG)"
+                android:paddingLeft="5dp" />
 
             <EditText
                 android:id="@+id/analyseWeightEditText"
@@ -79,7 +103,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/analyseWeight"
                 android:layout_marginTop="10dp"
-                android:inputType="number" />
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"/>
 
             <TextView
                 android:id="@+id/analyseAge"
@@ -87,7 +112,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/analyseWeightEditText"
                 android:layout_marginTop="20dp"
-                android:text="Enter Age" />
+                android:text="Enter Age"
+                android:paddingLeft="5dp" />
 
             <EditText
                 android:id="@+id/analyseAgeEditText"
@@ -95,7 +121,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/analyseAge"
                 android:layout_marginTop="10dp"
-                android:inputType="number" />
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -103,7 +130,9 @@
                 android:layout_below="@id/analyseAgeEditText"
                 android:layout_marginTop="20dp"
                 android:id="@+id/analyseFragmentButton"
-                android:text="Analyse" />
+                android:text="Analyse"
+                android:background="@drawable/rounded_button"
+                />
 
         </RelativeLayout>
 

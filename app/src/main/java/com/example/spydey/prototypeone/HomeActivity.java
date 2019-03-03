@@ -107,15 +107,18 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         {
             case R.id.recordsMenuButton:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RecordsFragment()).commit();
-                //Toast.makeText(this, "Activity under construction", Toast.LENGTH_SHORT).show();
+                drawer.closeDrawer(GravityCompat.START);
+            //Toast.makeText(this, "Activity under construction", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.analysisMenuButton:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AnalyseFragment()).commit();
+                drawer.closeDrawer(GravityCompat.START);
                 break;
 
             case R.id.signoutMenuButton:
                 logout();
+                drawer.closeDrawer(GravityCompat.START);
                 break;
 
             default:

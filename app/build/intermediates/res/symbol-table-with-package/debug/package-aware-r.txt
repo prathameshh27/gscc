@@ -466,6 +466,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -839,6 +840,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_button
+drawable rounded_edittext
+drawable rounded_spinner
 drawable splash_screen
 drawable splash_screen_icon
 drawable splash_screen_icon_background
@@ -883,6 +887,8 @@ id analyseBloodPressureEditText
 id analyseDiabetes
 id analyseDiabetesSpinner
 id analyseFragmentButton
+id analyseHeartRate
+id analyseHeartRateEditText
 id analyseHeight
 id analyseHeightEditText
 id analyseWeight

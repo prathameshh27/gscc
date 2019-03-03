@@ -24,6 +24,7 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
     private EditText editTextFirstName, editTextLastName, editTextEmail,
                     editTextPassword, editTextPhone, editTextBirth;
     private String genderstring;
+    private Spinner genderSpinner;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
     private FirebaseDatabase realdb;
@@ -63,10 +64,11 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
             //go to new activity
         }
 
-        Spinner genderSpinner = findViewById(R.id.gender_spinner);
+        genderSpinner = findViewById(R.id.gender_spinner);
         ArrayAdapter<CharSequence> genderAdapter = ArrayAdapter.createFromResource(this,R.array.gender, android.R.layout.simple_spinner_item);
         genderAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         genderSpinner.setAdapter(genderAdapter);
+        genderSpinner.setPrompt("Gender");
         genderSpinner.setOnItemSelectedListener(this);
     }
 

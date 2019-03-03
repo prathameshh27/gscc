@@ -20,6 +20,7 @@
             android:id="@+id/firstname_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
             android:hint="Firstname"
             android:inputType="textPersonName"
             />
@@ -28,6 +29,8 @@
             android:id="@+id/lastname_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
             android:hint="Lastname"
             android:inputType="textPersonName"
             />
@@ -36,6 +39,9 @@
             android:id="@+id/phone_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:maxLength="10"
             android:hint="Phone No."
             android:inputType="phone"
             />
@@ -44,7 +50,9 @@
             android:id="@+id/email2_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Email addr."
             android:inputType="textEmailAddress"
             />
 
@@ -52,6 +60,8 @@
             android:id="@+id/password2_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
             android:hint="Password"
             android:inputType="textPassword"
             />
@@ -60,20 +70,24 @@
             android:id="@+id/birthdate_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
             android:hint="Birthdate"
+            android:maxLength="10"
             android:inputType="date"
             />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gender"
-            android:textSize="18dp"/>
 
         <Spinner
             android:id="@+id/gender_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="28dp"></Spinner>
+            android:layout_marginTop="10dp"
+            android:autofillHints="Gender"
+            android:tooltipText="Gender"
+            android:background="@drawable/rounded_spinner"
+            android:minHeight="28dp"
+            >
+        </Spinner>
 
         <Button
             android:id="@+id/signup_button"
@@ -81,6 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Sign up"
+            android:background="@drawable/rounded_button"
             android:onClick="onClickSignup"
             />
 
