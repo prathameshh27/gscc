@@ -9,6 +9,7 @@
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
+    android:background="@color/appBackground"
     tools:context="com.example.spydey.prototypeone.HomeActivity">
 
     <RelativeLayout

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerVertical="true"
+    android:background="@color/appBackground"
     tools:context=".SignupActivity">
 
     <LinearLayout
@@ -86,6 +87,8 @@
             android:tooltipText="Gender"
             android:background="@drawable/rounded_spinner"
             android:minHeight="28dp"
+            android:tag="tag"
+
             >
         </Spinner>
 

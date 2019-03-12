@@ -21,11 +21,12 @@ import com.google.firebase.auth.FirebaseAuth;
  */
 public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelectedListener{
 
-    private EditText bloodpressureEditText, heightEditText, weightEditText;
+    private EditText heartRateEditText, bloodpressureEditText, heightEditText, weightEditText, ageEditText;
     private String dibeticString, bloodpressureVal, heightVal, weightVal, bmiVal, authUid;
     private Integer age;
     private FirebaseAuth auth;
     private Button anlayseButton;
+    private View view;
 
     public AnalyseFragment() {
         // Required empty public constructor
@@ -38,7 +39,7 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View view = inflater.inflate(R.layout.fragment_analyse, container, false);
+        view = inflater.inflate(R.layout.fragment_analyse, container, false);
 
         Spinner dibeticSpinner = view.findViewById(R.id.analyseDiabetesSpinner);
         ArrayAdapter<CharSequence> dibeticAdapter = ArrayAdapter.createFromResource(this.getActivity(), R.array.dibetic, android.R.layout.simple_spinner_item);
@@ -62,8 +63,37 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
         return view;
     }
 
+    void determineHeartRate(){
+        heartRateEditText = (EditText) view.findViewById(R.id.analyseHeartRateEditText);
+    }
+
+    void determineBloodPressure(){
+        bloodpressureEditText = (EditText) view.findViewById(R.id.analyseBloodPressureEditText);
+    }
+
+    void determineBMI(){
+        heightEditText = (EditText) view.findViewById(R.id.analyseHeightEditText);
+        weightEditText = (EditText) view.findViewById(R.id.analyseWeightEditText);
+    }
+
+    void determineAge(){
+        ageEditText = (EditText) view.findViewById(R.id.analyseAgeEditText);
+    }
+
+    void determineCholestrol(){
+        //pseudo function
+    }
+
+
     void onClickAnalyse(View view){
         Toast.makeText(this.getActivity(), "Activity under construction", Toast.LENGTH_SHORT).show();
+        if(dibeticString=="YES") {
+
+        }
+
+        else{
+
+        }
     }
 
     @Override

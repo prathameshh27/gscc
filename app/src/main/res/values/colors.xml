@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#d81b60</color>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1E88E5</color>
+    <color name="colorAccent">#1E88E5</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
-    <color name="brown">#870000</color>
-    <color name="navHeader">#065882</color>
-    <color name="navDrawer">#538daa</color>
-    <color name="blue">#00ACC1</color>
+    <color name="navDrawerText">#303F9F</color>
+    <!--<color name="navHeader">#065882</color>-->
+    <color name="navHeader">#1E88E5</color>
+    <!--<color name="navDrawer">#538daa</color>-->
+    <color name="navDrawer">#F5F5F5</color>
+    <!--<color name="blue">#00ACC1</color>-->
+    <!--<color name="blueOnPress">#C100ACC1</color>-->
+    <color name="blue">#2196F3</color>
+    <color name="blueOnPress">#1E88E5</color>
+    <color name="appBackground">#CBF5F5F5</color>
+    <color name="textColorDark">#CD000000</color>
+    <color name="textColorLight">#FFFFFF</color>
 
 </resources>

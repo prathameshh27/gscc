@@ -12,16 +12,20 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:elevation="2dp"
+        android:background="@drawable/rounded_profile_picture"
         android:src="@drawable/ic_displaypicture" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
+        android:elevation="2dp"
         android:text="FirstName LastName"
         android:textSize="18dp"
+        android:textColor="@color/textColorLight"
         android:id="@+id/navheader_fullusername"
         />
 
@@ -30,8 +34,10 @@
         android:layout_height="wrap_content"
         android:paddingTop="1dp"
         android:paddingLeft="2dp"
+        android:elevation="2dp"
         android:text="email@host.com"
         android:textSize="12dp"
+        android:textColor="@color/textColorLight"
         android:id="@+id/navheader_username"
         />
 

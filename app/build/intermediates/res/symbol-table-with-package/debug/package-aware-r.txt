@@ -461,19 +461,20 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color appBackground
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
 color blue
+color blueOnPress
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
-color brown
 color button_material_dark
 color button_material_light
 color colorAccent
@@ -526,6 +527,7 @@ color material_grey_800
 color material_grey_850
 color material_grey_900
 color navDrawer
+color navDrawerText
 color navHeader
 color notification_action_color_filter
 color notification_icon_bg_color
@@ -550,6 +552,8 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color textColorDark
+color textColorLight
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -823,8 +827,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_analysis
 drawable ic_displaypicture
-drawable ic_launcher_background
-drawable ic_launcher_foreground
+drawable ic_dropdown
 drawable ic_records
 drawable ic_signout
 drawable navigation_empty_icon
@@ -842,12 +845,14 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_button
 drawable rounded_edittext
+drawable rounded_profile_picture
 drawable rounded_spinner
 drawable splash_screen
 drawable splash_screen_icon
 drawable splash_screen_icon_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font londrinaoutlineregular
 id ALT
 id CTRL
 id FUNCTION
@@ -950,6 +955,7 @@ id gender_spinner
 id ghost_view
 id gone
 id groups
+id header
 id home
 id homeAsUp
 id icon
@@ -1219,6 +1225,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
 string login_button
+string login_email_hint
 string navigation_drawer_close
 string navigation_drawer_open
 string password_hint
@@ -1231,7 +1238,6 @@ string project_id
 string search_menu_title
 string signup_link
 string status_bar_notification_info_overflow
-string username_hint
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1398,6 +1404,7 @@ style Base_Widget_AppCompat_Toolbar
 style Base_Widget_AppCompat_Toolbar_Button_Navigation
 style Base_Widget_Design_AppBarLayout
 style Base_Widget_Design_TabLayout
+style MainTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_ThemeOverlay_AppCompat

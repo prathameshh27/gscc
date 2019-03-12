@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-46:12
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\31d19eee72fce0180694f35a074b3479\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\399ff9febaac809c797f3004a69e10dd\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1c58a0d19b53064f03c8b3ae6125f3f9\AndroidManifest.xml:17:1-42:12
@@ -41,20 +41,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Prathamesh Pav
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\881742a26a3109f38b5a31562584bd7e\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fc981f4d7505aadec403d12c4e35c0ba\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\f56d5f2a0de40d8abdf3deebd612cda4\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
 		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:2:11-69
@@ -73,7 +73,7 @@ MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Prathamesh Pavnoj
 	android:name
 		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:7:5-44:19
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:7:5-50:19
 MERGED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1c58a0d19b53064f03c8b3ae6125f3f9\AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1c58a0d19b53064f03c8b3ae6125f3f9\AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Prathamesh Pavnoji\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\5e37e16aa0417483cfb15a1218ddae06\AndroidManifest.xml:7:5-8:19
@@ -123,43 +123,53 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Pr
 	android:theme
 		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:13:9-40
 activity#com.example.spydey.prototypeone.SplashActivity
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:16:9-23:20
+	android:screenOrientation
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:18:13-49
 	android:theme
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:16:13-48
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:17:13-48
 	android:name
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:15:19-49
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:16:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:17:13-20:29
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:19:13-22:29
 action#android.intent.action.MAIN
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:21:27-74
 activity#com.example.spydey.prototypeone.MainActivity
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:23:9-27:20
-	android:name
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:23:19-47
-intent-filter#action:name:android.intent.action.VIEW
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:24:13-26:29
-	android:label
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:24:28-60
-action#android.intent.action.VIEW
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:25:17-69
-	android:name
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:25:25-66
-activity#com.example.spydey.prototypeone.SignupActivity
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:29:9-51
-	android:name
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:29:19-49
-activity#com.example.spydey.prototypeone.HomeActivity
-ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:31:9-33:59
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:25:9-31:20
+	android:screenOrientation
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:27:13-49
 	android:theme
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:33:13-56
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:26:13-45
 	android:name
-		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:32:13-41
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:25:19-47
+intent-filter#action:name:android.intent.action.VIEW
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:28:13-30:29
+	android:label
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:28:28-60
+action#android.intent.action.VIEW
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:29:25-66
+activity#com.example.spydey.prototypeone.SignupActivity
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:33:9-34:51
+	android:screenOrientation
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:34:13-49
+	android:name
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:33:19-49
+activity#com.example.spydey.prototypeone.HomeActivity
+ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:36:9-39:51
+	android:screenOrientation
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:39:13-49
+	android:theme
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:38:13-56
+	android:name
+		ADDED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml:37:13-41
 uses-sdk
 INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\AndroidManifest.xml
