@@ -53,6 +53,7 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
         auth = FirebaseAuth.getInstance();
         realdb = FirebaseDatabase.getInstance();
         //findViewById(R.id.signup_button).setOnClickListener(this);
+        progressBar = findViewById(R.id.progressBarSignUp);
     }
 
     @Override
@@ -99,7 +100,7 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
             return;
         }
 
-        //progressBar.setVisibility(View.VISIBLE);
+        progressBar.setVisibility(View.VISIBLE);
         auth.createUserWithEmailAndPassword(emailstring,passwordstring).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -114,7 +115,6 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
-                                    //progressBar.setVisibility(View.GONE);
                                     if(task.isSuccessful())
                                     {
                                         Toast.makeText(SignupActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
@@ -128,6 +128,8 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
 
                         else
                             Toast.makeText(SignupActivity.this, "Error Occurred while adding user", Toast.LENGTH_SHORT).show();
+
+                        progressBar.setVisibility(View.GONE);
                     }
                 });
 

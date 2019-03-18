@@ -1015,6 +1015,7 @@ id phone_field
 id pin
 id probabilityTextView
 id progressBar
+id progressBarSignUp
 id progress_circular
 id progress_horizontal
 id radio

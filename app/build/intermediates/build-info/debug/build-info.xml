@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.3.0"
-    timestamp="1552923597669"
+    timestamp="1552931779974"
     token="-5910018187142820890"
     verifier="COMPATIBLE" >
 
@@ -29,16 +29,22 @@
 
     <build
         build-mode="FULL"
-        timestamp="1552922467086"
+        timestamp="1552929980153"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -50,27 +56,30 @@
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
-        <artifact
-            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1552923390903"
+        ir-eligibility="METHOD_DELETED"
+        timestamp="1552931080779"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1552931647042"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
@@ -78,7 +87,7 @@
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1552923597669"
+        timestamp="1552931779974"
         verifier="COMPATIBLE" >
         <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
