@@ -552,8 +552,11 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color textBackgroundDark
+color textBackgroundLight
 color textColorDark
 color textColorLight
+color textColorMedium
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -854,6 +857,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font londrinaoutlineregular
 id ALT
+id BMIResult
 id CTRL
 id FUNCTION
 id META
@@ -882,6 +886,7 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id ageResult
 id alertTitle
 id all
 id always
@@ -905,6 +910,7 @@ id barrier
 id beginning
 id birthdate_field
 id blocking
+id bloodPressureResult
 id bottom
 id buttonPanel
 id cancel_action
@@ -930,6 +936,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id diabetesResult
 id dimensions
 id direct
 id disableHome
@@ -954,8 +961,10 @@ id fragment_container
 id gender_spinner
 id ghost_view
 id gone
+id gridlayout
 id groups
 id header
+id heartRateResult
 id home
 id homeAsUp
 id icon
@@ -990,6 +999,7 @@ id navigation_header_container
 id never
 id none
 id normal
+id noteTextView
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -1003,10 +1013,13 @@ id password_field
 id percent
 id phone_field
 id pin
+id probabilityTextView
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
 id recordsMenuButton
+id resultTextView
 id right
 id right_icon
 id right_side
@@ -1052,6 +1065,7 @@ id standard
 id start
 id status_bar_latest_event_content
 id submenuarrow
+id submitResultButton
 id submit_area
 id tabMode
 id tag_transition_group
@@ -1124,6 +1138,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_home
 layout activity_main
+layout activity_result
 layout activity_signup
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1228,6 +1243,7 @@ string login_button
 string login_email_hint
 string navigation_drawer_close
 string navigation_drawer_open
+string note
 string password_hint
 string password_toggle_content_description
 string path_password_eye
@@ -1246,6 +1262,8 @@ style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
 style AppTheme_NoActionBar
+style AppTheme_gridLayoutCol1
+style AppTheme_gridLayoutCol2
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog

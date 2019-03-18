@@ -9,6 +9,28 @@
         <item name="android:textColor">@color/textColorDark</item>
     </style>
 
+    <!--ResultActivity GridLayout column 1-->
+    <style name="AppTheme.gridLayoutCol1">
+        <item name="android:background">@color/textBackgroundDark</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">60dp</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+    </style>
+
+    <!--ResultActivity GridLayout column 2-->
+    <style name="AppTheme.gridLayoutCol2">
+        <item name="android:text">"N/A"</item>
+        <item name="android:background">@color/textBackgroundLight</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+    </style>
+
     <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

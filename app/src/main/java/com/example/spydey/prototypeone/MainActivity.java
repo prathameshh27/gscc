@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         editTextEmail = (EditText) findViewById(R.id.email_field);
         editTextPassword = (EditText) findViewById(R.id.password_field);
+        signinProgressBar = findViewById(R.id.progressBar);
+
         auth = FirebaseAuth.getInstance();
 
         if(auth.getCurrentUser()!=null)
@@ -54,19 +56,20 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        //signinProgressBar.setVisibility(View.VISIBLE);
+        signinProgressBar.setVisibility(View.VISIBLE);
         auth.signInWithEmailAndPassword(emailstring, passwordstring).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if(task.isSuccessful())
                 {
-                    //signinProgressBar.setVisibility(View.GONE);
+                    signinProgressBar.setVisibility(View.GONE);
                     transitToNewActivity();
                 }
 
                 else
                 {
+                    signinProgressBar.setVisibility(View.GONE);
                     Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
                     return;
                 }

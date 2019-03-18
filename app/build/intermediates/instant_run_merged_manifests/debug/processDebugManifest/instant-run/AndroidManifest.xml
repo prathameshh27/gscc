@@ -48,17 +48,9 @@
             android:name="com.example.spydey.prototypeone.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <!-- <activity -->
-        <!-- android:name=".AnalyseActivity" -->
-        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
-
-
-        <!-- <activity -->
-        <!-- android:name=".NavbarActivity" -->
-        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
-        <!--  -->
-
+        <activity
+            android:name="com.example.spydey.prototypeone.ResultActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

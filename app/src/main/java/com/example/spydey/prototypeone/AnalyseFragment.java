@@ -1,8 +1,10 @@
 package com.example.spydey.prototypeone;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,24 +17,110 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.text.DecimalFormat;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelectedListener{
 
-    private EditText heartRateEditText, bloodpressureEditText, heightEditText, weightEditText, ageEditText;
-    private String dibeticString, bloodpressureVal, heightVal, weightVal, bmiVal, authUid;
-    private Integer age;
+    private EditText heartRateEditText, bloodPressureEditText, heightEditText, weightEditText, ageEditText, cholestrolEditText;
+    private String dibeticString, heartRateString, bloodPressureString, heightString, weightString, bmiString, ageString, cholestrolString, authUid;
+    private Double heartRateVal, bloodPressureVal, heightVal, weightVal, bmiVal, ageVal, cholestrolVal, probabilityVal;
+    private DecimalFormat decimalFormat;
     private FirebaseAuth auth;
     private Button anlayseButton;
     private View view;
 
     public AnalyseFragment() {
         // Required empty public constructor
+        heartRateVal=bloodPressureVal=heightVal=weightVal=bmiVal=ageVal=probabilityVal=0.0;
+    }
+
+    Boolean validateData(){
+        heartRateEditText = (EditText) view.findViewById(R.id.analyseHeartRateEditText);
+        bloodPressureEditText = (EditText) view.findViewById(R.id.analyseBloodPressureEditText);
+        heightEditText = (EditText) view.findViewById(R.id.analyseHeightEditText);
+        weightEditText = (EditText) view.findViewById(R.id.analyseWeightEditText);
+        ageEditText = (EditText) view.findViewById(R.id.analyseAgeEditText);
+
+        decimalFormat = new DecimalFormat("#.00");
+
+        heartRateString=heartRateEditText.getText().toString();
+        bloodPressureString=bloodPressureEditText.getText().toString();
+        ageString=ageEditText.getText().toString();
+        heightString=heightEditText.getText().toString(); 
+        weightString=weightEditText.getText().toString(); 
+        
+        if(!heartRateString.isEmpty() && !bloodPressureString.isEmpty() && !heightString.isEmpty() && !weightString.isEmpty())
+        {
+            heartRateVal=Double.valueOf(heartRateString);
+            bloodPressureVal=Double.valueOf(bloodPressureString);
+            ageVal=Double.valueOf(ageString);
+            heightVal=Double.valueOf(heightString);
+            weightVal=Double.valueOf(weightString);
+            //bmiVal=weightVal/(heightVal*heightVal);
+            bmiVal=Double.valueOf(decimalFormat.format(weightVal/(heightVal*heightVal)));
+
+            Log.d("customLog", heartRateVal+" "+bloodPressureVal+" "+heightVal+" "+weightVal+" "+ageVal);
+            return true;
+        }
+
+        else { return false; }
+    }
+
+    void determineDibetes(){
+        if(dibeticString=="YES") {
+        }
+
+        else{
+        }
+    }
+
+    void determineHeartRate(){
+        if(heartRateVal>=70 && heartRateVal<90) {heartRateString="LOW";}
+
+        if(heartRateVal>=90 && heartRateVal<120) {heartRateString="NORMAL";}
+
+        if(heartRateVal>=140 && heartRateVal<190) {heartRateString="HIGH";}
+
 
     }
 
+    void determineBloodPressure(){  //systolic (upper)
+
+        if(bloodPressureVal<120) {bloodPressureString="NORMAL";}
+
+        if(bloodPressureVal>=120 && bloodPressureVal<139) {bloodPressureString="PREHYPERTENSION";}
+
+        if(bloodPressureVal>=140 && bloodPressureVal<159) {bloodPressureString="HYPERTENSION";}
+
+    }
+
+    void determineBMI(){
+        if(bmiVal<18.5) {bmiString="UNDERWEIGHT";}
+
+        if(bmiVal>=18.5 && bmiVal<24.9) {bmiString="NORMAL";}
+
+        if(bmiVal>=25 && bmiVal<29.9) {bmiString="OVERWEIGHT";}
+
+        else {bmiString="OBESITY";}
+    }
+
+    void determineAge(){
+        if(ageVal<30){ageString="YOUNG";}
+
+        else if(ageVal>=31 && ageVal<=50) {ageString="MIDDLE";}
+
+        else {ageString="ELDERLY";}
+    }
+
+    void determineCholestrol(){
+        if(cholestrolVal<200) {cholestrolString="YES";}
+
+        else {cholestrolString="NO";}
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,7 +137,7 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
 
         auth = FirebaseAuth.getInstance();
         authUid = auth.getUid();
-        bloodpressureEditText=(EditText)view.findViewById(R.id.analyseBloodPressureEditText);
+        bloodPressureEditText=(EditText)view.findViewById(R.id.analyseBloodPressureEditText);
         heightEditText=(EditText)view.findViewById(R.id.analyseHeightEditText);
         weightEditText=(EditText)view.findViewById(R.id.analyseWeightEditText);
 
@@ -57,44 +145,29 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
         anlayseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Activity under construction", Toast.LENGTH_SHORT).show();
+
+
+
+
+                if(validateData()==true)
+                {
+                    Intent intent = new Intent(getActivity(), ResultActivity.class);
+                    intent.putExtra("diabetes", dibeticString);
+                    intent.putExtra("heartRate", heartRateVal);
+                    intent.putExtra("bloodPressure", bloodPressureVal);
+                    intent.putExtra("bmi", bmiVal);
+                    intent.putExtra("age", ageVal);
+                    intent.putExtra("probability", probabilityVal);
+
+                    startActivity(intent);
+                    getActivity().finish();
+                }
             }
         });
+
         return view;
     }
 
-    void determineHeartRate(){
-        heartRateEditText = (EditText) view.findViewById(R.id.analyseHeartRateEditText);
-    }
-
-    void determineBloodPressure(){
-        bloodpressureEditText = (EditText) view.findViewById(R.id.analyseBloodPressureEditText);
-    }
-
-    void determineBMI(){
-        heightEditText = (EditText) view.findViewById(R.id.analyseHeightEditText);
-        weightEditText = (EditText) view.findViewById(R.id.analyseWeightEditText);
-    }
-
-    void determineAge(){
-        ageEditText = (EditText) view.findViewById(R.id.analyseAgeEditText);
-    }
-
-    void determineCholestrol(){
-        //pseudo function
-    }
-
-
-    void onClickAnalyse(View view){
-        Toast.makeText(this.getActivity(), "Activity under construction", Toast.LENGTH_SHORT).show();
-        if(dibeticString=="YES") {
-
-        }
-
-        else{
-
-        }
-    }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
