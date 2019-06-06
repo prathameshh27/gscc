@@ -121,6 +121,7 @@
         android:layout_marginTop="10dp"
         android:id="@+id/submitResultButton"
         android:text="Submit Report"
+        android:onClick="onClickSubmitResult"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_button"
         android:layout_below="@id/noteTextView"/>

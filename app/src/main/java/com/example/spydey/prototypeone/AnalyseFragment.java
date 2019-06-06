@@ -36,6 +36,9 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
     public AnalyseFragment() {
         // Required empty public constructor
         heartRateVal=bloodPressureVal=heightVal=weightVal=bmiVal=ageVal=probabilityVal=0.0;
+
+        /////////////////////////////////////to be deleted//////////////////////////////////////////
+        probabilityVal=Math.random()*20+10;
     }
 
     Boolean validateData(){
@@ -62,8 +65,12 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
             weightVal=Double.valueOf(weightString);
             //bmiVal=weightVal/(heightVal*heightVal);
             bmiVal=Double.valueOf(decimalFormat.format(weightVal/(heightVal*heightVal)));
-
             Log.d("customLog", heartRateVal+" "+bloodPressureVal+" "+heightVal+" "+weightVal+" "+ageVal);
+
+            /////////////////////////////////////////////////
+            determineHeartRate();
+
+
             return true;
         }
 
@@ -79,11 +86,17 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
     }
 
     void determineHeartRate(){
-        if(heartRateVal>=70 && heartRateVal<90) {heartRateString="LOW";}
+        if(heartRateVal>=0 && heartRateVal<60) {heartRateString="LOW";
+            probabilityVal=(Math.random()*20)+10;
+        }
 
-        if(heartRateVal>=90 && heartRateVal<120) {heartRateString="NORMAL";}
+        if(heartRateVal>=60 && heartRateVal<100) {heartRateString="NORMAL";
+            probabilityVal=(Math.random()*8)+1;
+        }
 
-        if(heartRateVal>=140 && heartRateVal<190) {heartRateString="HIGH";}
+        if(heartRateVal>=100 && heartRateVal<200) {heartRateString="HIGH";
+            probabilityVal=(Math.random()*20)+10;
+        }
 
 
     }
@@ -151,6 +164,8 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
 
                 if(validateData()==true)
                 {
+                    probabilityVal=Double.valueOf(decimalFormat.format(probabilityVal));
+
                     Intent intent = new Intent(getActivity(), ResultActivity.class);
                     intent.putExtra("diabetes", dibeticString);
                     intent.putExtra("heartRate", heartRateVal);
