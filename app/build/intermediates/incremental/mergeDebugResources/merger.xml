@@ -1924,8 +1924,8 @@
         <item>Female</item>
         <item>Other</item>
     </string-array><string-array name="dibetic">
-        <item>Yes</item>
         <item>No</item>
+        <item>Yes</item>
     </string-array><string name="hello_blank_fragment">Hello blank fragment</string><string name="login_email_hint">Email</string><string name="note">Disclaimer: \nPlease note that the report generated above is solely for the use of Doctor. \nIt is strongly recommended that you send the report to the doctor and wait for the response.</string></file><file path="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>

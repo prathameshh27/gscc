@@ -8,15 +8,15 @@
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-        <TextView
+        <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="Activity Under Construction" />
+            android:id="@+id/recordsRecyclerView">
 
+        </android.support.v7.widget.RecyclerView>
     </ScrollView>
 
 </FrameLayout>

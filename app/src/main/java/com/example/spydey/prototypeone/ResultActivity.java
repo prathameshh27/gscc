@@ -64,9 +64,9 @@ public class ResultActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         uid = auth.getUid();
         realdb = FirebaseDatabase.getInstance();
-        databaseUserReference = realdb.getReference("com.example.spydey.prototypeone.UserData").child(uid);
+        databaseUserReference = realdb.getReference("UserData").child(uid);
 
-        dateFormat = new SimpleDateFormat("yyyy.mm.dd-hh.mm.ss");
+        dateFormat = new SimpleDateFormat("yyyy-mm-dd_hh-mm-ss");
         date = new Date();
         dateString=dateFormat.format(date);
 
