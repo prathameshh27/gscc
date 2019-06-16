@@ -130,10 +130,48 @@
                 android:text="25"
                 android:background="@drawable/rounded_edittext"/>
 
-            <Button
+            <TextView
+                android:id="@+id/analyseAttention"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/analyseAgeEditText"
+                android:layout_marginTop="20dp"
+                android:text="Enter Attention"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/analyseAttentionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseAttention"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:text="25"
+                android:background="@drawable/rounded_edittext"/>
+
+            <TextView
+                android:id="@+id/analyseMeditation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseAttentionEditText"
+                android:layout_marginTop="20dp"
+                android:text="Enter Meditation"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/analyseMeditationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseMeditation"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:text="25"
+                android:background="@drawable/rounded_edittext"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/analyseMeditationEditText"
                 android:layout_marginTop="20dp"
                 android:id="@+id/analyseFragmentButton"
                 android:text="Analyse"

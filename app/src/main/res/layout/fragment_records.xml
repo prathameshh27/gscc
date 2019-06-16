@@ -5,6 +5,7 @@
     android:background="@color/appBackground"
     tools:context="com.example.spydey.prototypeone.RecordsFragment">
 
+
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"

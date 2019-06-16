@@ -1,17 +1,22 @@
 package com.example.spydey.prototypeone.Model;
+import android.util.Log;
+import com.example.spydey.prototypeone.UserData;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+public class RecordItem extends UserData
+{
+    public String recordDate;
 
-import com.example.spydey.prototypeone.R;
+    public RecordItem()
+    {
+        recordDate="Record Name";
+        //Log.i("customLog", "RecordItem: child Executed");
+    }
 
-public class RecordItem {
-    public String recordRoot;
+    public RecordItem(String diabetes, String heartrate, String bloodpressure, String bmi,
+                      String age, String probability, String meditation, String attention) {
+        super(diabetes, heartrate, bloodpressure, bmi, age, probability, meditation, attention);
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.record_item_card, container, false);
+        Log.i("customLog", "RecordItem -> Parametric Constructor: "+diabetes+" "
+                +heartrate+" "+bloodpressure+" "+bmi+" "+age+" "+probability+" "+meditation+" "+attention);
     }
 }

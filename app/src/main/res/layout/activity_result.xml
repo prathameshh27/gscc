@@ -84,6 +84,26 @@
             style="@style/AppTheme.gridLayoutCol2"
             />
 
+        <TextView
+            style="@style/AppTheme.gridLayoutCol1"
+            android:text="Meditation"
+            />
+
+        <TextView
+            android:id="@+id/meditationResult"
+            style="@style/AppTheme.gridLayoutCol2"
+            />
+
+        <TextView
+            style="@style/AppTheme.gridLayoutCol1"
+            android:text="Attention"
+            />
+
+        <TextView
+            android:id="@+id/attentionResult"
+            style="@style/AppTheme.gridLayoutCol2"
+            />
+
     </GridLayout>
 
     <TextView

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,13 +23,15 @@ public class ResultActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private FirebaseDatabase realdb;
+    private DatabaseReference databaseUserReference;
     private String uid, dateString;
     private Date date;
     private DateFormat dateFormat;
-    private DatabaseReference databaseUserReference;
     private UserData userdata;
-    public TextView diabetesTextView, heartRateTextView, bloodPressureTextView, BMITextView, ageTextView, probabilityTextView;
-    public String diabetesString, heartRateString, bloodPressureString, BMIString, ageString, probabilityString;
+    public TextView diabetesTextView, heartRateTextView, bloodPressureTextView, BMITextView,
+            ageTextView, attentionTextView, meditationTextView, probabilityTextView;
+    public String diabetesString, heartRateString, bloodPressureString, BMIString,
+            ageString, attentionString, meditationString, probabilityString;
     public AlertDialog.Builder alertDialog;
     public Intent intent, intentHome;
 
@@ -66,24 +69,41 @@ public class ResultActivity extends AppCompatActivity {
         realdb = FirebaseDatabase.getInstance();
         databaseUserReference = realdb.getReference("UserData").child(uid);
 
-        dateFormat = new SimpleDateFormat("yyyy-mm-dd_hh-mm-ss");
+        dateFormat = new SimpleDateFormat("yyyy-MM-dd_hh-mm-ss");
         date = new Date();
         dateString=dateFormat.format(date);
+        Log.i("customLog", "onCreate: "+dateString);
 
         intentHome=new Intent(this, HomeActivity.class);
         intent = getIntent();
+
         diabetesString=intent.getStringExtra("diabetes");
-        heartRateString=String.valueOf(intent.getDoubleExtra("heartRate",0.0));
-        bloodPressureString=String.valueOf(intent.getDoubleExtra("bloodPressure",0.0));
-        BMIString=String.valueOf(intent.getDoubleExtra("bmi",0.0));
-        ageString=String.valueOf(intent.getDoubleExtra("age",0.0));
         probabilityString=String.valueOf(intent.getDoubleExtra("probability",0.0));
+
+        //Numerical value
+        heartRateString = String.valueOf(intent.getDoubleExtra("heartRate",0.0));
+        bloodPressureString = String.valueOf(intent.getDoubleExtra("bloodPressure",0.0));
+        BMIString = String.valueOf(intent.getDoubleExtra("bmi",0.0));
+        ageString = String.valueOf(intent.getDoubleExtra("age",0.0));
+        meditationString = String.valueOf(intent.getDoubleExtra("meditation",0.0));;
+        attentionString = String.valueOf(intent.getDoubleExtra("attention",0.0));
+
+        //Decision value
+//        heartRateString = intent.getStringExtra("heartRateString");
+//        bloodPressureString = intent.getStringExtra("bloodPressureString");
+//        BMIString = intent.getStringExtra("bmiString");
+//        ageString = intent.getStringExtra("ageString");
+//        meditationString = intent.getStringExtra("meditationString");
+//        attentionString = intent.getStringExtra("attentionString");
+
 
         diabetesTextView = findViewById(R.id.diabetesResult);
         heartRateTextView = findViewById(R.id.heartRateResult);
         bloodPressureTextView = findViewById(R.id.bloodPressureResult);
         BMITextView = findViewById(R.id.BMIResult);
         ageTextView = findViewById(R.id.ageResult);
+        attentionTextView = findViewById(R.id.attentionResult);
+        meditationTextView = findViewById(R.id.meditationResult);
         probabilityTextView = findViewById(R.id.probabilityTextView);
 
         diabetesTextView.setText(diabetesString);
@@ -91,11 +111,13 @@ public class ResultActivity extends AppCompatActivity {
         bloodPressureTextView.setText(bloodPressureString);
         BMITextView.setText(BMIString);
         ageTextView.setText(ageString);
+        attentionTextView.setText(attentionString);
+        meditationTextView.setText(meditationString);
         probabilityTextView.setText("You have "+probabilityString+"% chances of having a heart attack.");
     }
 
     public void onClickSubmitResult(View view) {
-        userdata = new UserData(diabetesString, heartRateString, bloodPressureString, BMIString, ageString, probabilityString);
+        userdata = new UserData(diabetesString, heartRateString, bloodPressureString, BMIString, ageString, probabilityString, meditationString, attentionString);
         databaseUserReference.child(dateString).setValue(userdata)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

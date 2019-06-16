@@ -62,7 +62,7 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
 
         if(auth.getCurrentUser()!=null)
         {
-            //go to new activity
+             //go to new activity
         }
 
         genderSpinner = findViewById(R.id.gender_spinner);
