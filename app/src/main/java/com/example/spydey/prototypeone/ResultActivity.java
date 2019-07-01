@@ -24,20 +24,19 @@ public class ResultActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private FirebaseDatabase realdb;
     private DatabaseReference databaseUserReference;
-    private String uid, dateString;
     private Date date;
     private DateFormat dateFormat;
     private UserData userdata;
-    public TextView diabetesTextView, heartRateTextView, bloodPressureTextView, BMITextView,
-            ageTextView, attentionTextView, meditationTextView, probabilityTextView;
-    public String diabetesString, heartRateString, bloodPressureString, BMIString,
-            ageString, attentionString, meditationString, probabilityString;
     public AlertDialog.Builder alertDialog;
     public Intent intent, intentHome;
+    private String uid, dateString;
+    public String diabetesString, heartRateString, bloodPressureString, BMIString,
+                ageString, stressString, attentionString, meditationString, probabilityString;
+    public TextView diabetesTextView, heartRateTextView, bloodPressureTextView, BMITextView,
+                ageTextView, stressTextView, attentionTextView, meditationTextView, probabilityTextView;
 
     @Override
     public void onBackPressed() {
-
         alertDialog = new AlertDialog.Builder(this);
         alertDialog.setTitle("Exit Report")
                 .setMessage("Are you sure you want to cancel the report?")
@@ -55,7 +54,6 @@ public class ResultActivity extends AppCompatActivity {
                     }
                 });
         alertDialog.create().show();
-
     }
 
     @Override
@@ -74,55 +72,66 @@ public class ResultActivity extends AppCompatActivity {
         dateString=dateFormat.format(date);
         Log.i("customLog", "onCreate: "+dateString);
 
+        //opens the Home activity on back button press with the help of Alert Dialog
         intentHome=new Intent(this, HomeActivity.class);
+
+        //get intent from Analyse Fragment
         intent = getIntent();
 
-        diabetesString=intent.getStringExtra("diabetes");
-        probabilityString=String.valueOf(intent.getDoubleExtra("probability",0.0));
+        diabetesString = intent.getStringExtra("diabetes");
+        stressString = intent.getStringExtra("stress");
+        probabilityString = String.valueOf(intent.getDoubleExtra("probability",0.0));
 
         //Numerical value
-        heartRateString = String.valueOf(intent.getDoubleExtra("heartRate",0.0));
-        bloodPressureString = String.valueOf(intent.getDoubleExtra("bloodPressure",0.0));
-        BMIString = String.valueOf(intent.getDoubleExtra("bmi",0.0));
-        ageString = String.valueOf(intent.getDoubleExtra("age",0.0));
-        meditationString = String.valueOf(intent.getDoubleExtra("meditation",0.0));;
-        attentionString = String.valueOf(intent.getDoubleExtra("attention",0.0));
+//        heartRateString = String.valueOf(intent.getDoubleExtra("heartRate",0.0));
+//        bloodPressureString = String.valueOf(intent.getDoubleExtra("bloodPressure",0.0));
+//        BMIString = String.valueOf(intent.getDoubleExtra("bmi",0.0));
+//        ageString = String.valueOf(intent.getDoubleExtra("age",0.0));
+//        meditationString = String.valueOf(intent.getDoubleExtra("meditation",0.0));;
+//        attentionString = String.valueOf(intent.getDoubleExtra("attention",0.0));
 
         //Decision value
-//        heartRateString = intent.getStringExtra("heartRateString");
-//        bloodPressureString = intent.getStringExtra("bloodPressureString");
-//        BMIString = intent.getStringExtra("bmiString");
-//        ageString = intent.getStringExtra("ageString");
-//        meditationString = intent.getStringExtra("meditationString");
-//        attentionString = intent.getStringExtra("attentionString");
+        heartRateString = intent.getStringExtra("heartRateString");
+        bloodPressureString = intent.getStringExtra("bloodPressureString");
+        BMIString = intent.getStringExtra("bmiString");
+        ageString = intent.getStringExtra("ageString");
+        meditationString = intent.getStringExtra("meditationString");
+        attentionString = intent.getStringExtra("attentionString");
 
-
+        //getContext of all the textviews
         diabetesTextView = findViewById(R.id.diabetesResult);
         heartRateTextView = findViewById(R.id.heartRateResult);
         bloodPressureTextView = findViewById(R.id.bloodPressureResult);
         BMITextView = findViewById(R.id.BMIResult);
         ageTextView = findViewById(R.id.ageResult);
-        attentionTextView = findViewById(R.id.attentionResult);
-        meditationTextView = findViewById(R.id.meditationResult);
+        stressTextView = findViewById(R.id.stressResult);
+        //attentionTextView = findViewById(R.id.attentionResult);
+        //meditationTextView = findViewById(R.id.meditationResult);
         probabilityTextView = findViewById(R.id.probabilityTextView);
 
+        //set text into the textview
         diabetesTextView.setText(diabetesString);
         heartRateTextView.setText(heartRateString);
         bloodPressureTextView.setText(bloodPressureString);
         BMITextView.setText(BMIString);
         ageTextView.setText(ageString);
-        attentionTextView.setText(attentionString);
-        meditationTextView.setText(meditationString);
+        stressTextView.setText(stressString);
+        //attentionTextView.setText(attentionString);
+        //meditationTextView.setText(meditationString);
         probabilityTextView.setText("You have "+probabilityString+"% chances of having a heart attack.");
     }
 
+    //submit button
     public void onClickSubmitResult(View view) {
-        userdata = new UserData(diabetesString, heartRateString, bloodPressureString, BMIString, ageString, probabilityString, meditationString, attentionString);
+        userdata = new UserData(diabetesString, heartRateString, bloodPressureString, BMIString,
+                ageString, probabilityString, stressString, meditationString, attentionString);
         databaseUserReference.child(dateString).setValue(userdata)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(ResultActivity.this, "Data submitted Successfully.", Toast.LENGTH_SHORT).show();
+                        finish();
+                        startActivity(intentHome);
                     }
                 });
     }

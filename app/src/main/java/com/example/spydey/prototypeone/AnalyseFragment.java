@@ -34,7 +34,7 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
     private EditText heartRateEditText, bloodPressureEditText, heightEditText, weightEditText,
             ageEditText, attentionEditText, meditationEditText, cholestrolEditText;
     private String dibeticString, heartRateString, bloodPressureString, heightString, weightString,
-            bmiString, ageString, attentionString, meditationString, cholestrolString, authUid;
+            bmiString, ageString, stressString, attentionString, meditationString, cholestrolString, authUid;
     private Double heartRateVal, bloodPressureVal, heightVal, weightVal, bmiVal,
             ageVal, attentionVal, meditationVal, cholestrolVal, probabilityVal;
     private DecimalFormat decimalFormat;
@@ -42,27 +42,21 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
     private Button anlayseButton;
     private View view;
     private Spinner dibeticSpinner;
-    private Clusters attentionCluster, meditationCluster;
     private FirebaseDatabase realdb;
     private DatabaseReference dbRef;
     public Clusters cluster;
 
     public AnalyseFragment() {
         // Required empty public constructor
+        Log.i("customLog","AnalyseFragment -> Default constructor: executed");
         heartRateVal=bloodPressureVal=heightVal=weightVal=bmiVal=ageVal=probabilityVal=0.0;
-
-        //attentionCluster = Clusters.getAttention();
-        //meditationCluster = Clusters.getMeditation();
-
-        Log.d("customLog","Into Analyse constructor");
-        //Log.d("customLog", "att: "+attentionCluster.cluster1+" med: "+meditationCluster.cluster1);
 
         //TODO: to be deleted
         probabilityVal=Math.random()*20+10;
     }
 
     Boolean validateData(){
-
+        Log.i("customLog", "AnalyseFragment -> validateData: executed");
         decimalFormat = new DecimalFormat("#.00");
 
         heartRateString=heartRateEditText.getText().toString();
@@ -73,7 +67,9 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
         attentionString = attentionEditText.getText().toString();
         meditationString = meditationEditText.getText().toString();
         
-        if(!heartRateString.isEmpty() && !bloodPressureString.isEmpty() && !heightString.isEmpty() && !weightString.isEmpty())
+        if(!heartRateString.isEmpty() && !bloodPressureString.isEmpty()
+                && !heightString.isEmpty() && !weightString.isEmpty() &&
+                !ageString.isEmpty() && !attentionString.isEmpty() && !meditationString.isEmpty())
         {
             heartRateVal=Double.valueOf(heartRateString);
             bloodPressureVal=Double.valueOf(bloodPressureString);
@@ -84,15 +80,15 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
             attentionVal=Double.valueOf(attentionString);
             meditationVal=Double.valueOf(meditationString);
 
-            Log.d("customLog", heartRateVal+" "+bloodPressureVal+" "+heightVal+" "+weightVal+" "+ageVal+" "+attentionVal+" "+meditationVal);
+            Log.i("customLog", heartRateVal+" "+bloodPressureVal+" "+heightVal+" "
+                    +weightVal+" " +ageVal+" "+attentionVal+" "+meditationVal);
 
             /////////////////////////////////////////////////
             determineHeartRate();
             determineBloodPressure();
             determineBMI();
             determineAge();
-            determineAttention();
-            determineMeditation();
+            determineStress();
 
             return true;
         }
@@ -100,65 +96,94 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
     }
 
     void determineDibetes(){
-        if(dibeticString=="YES") {
-        }
-
-        else{
-        }
+        Log.i("customLog", "AnalyseFragment -> determineDibetes(): executed");
+        if(dibeticString.equals("YES")) { }
+        else { }
     }
 
     void determineHeartRate(){
-        if(heartRateVal>=0 && heartRateVal<60) {heartRateString="LOW";
+        Log.i("customLog", "AnalyseFragment -> determineHeartRate(): executed");
+        if(heartRateVal>=0 && heartRateVal<60) {heartRateString="Low";
             probabilityVal=(Math.random()*20)+10;
         }
 
-        if(heartRateVal>=60 && heartRateVal<100) {heartRateString="NORMAL";
+        if(heartRateVal>=60 && heartRateVal<100) {heartRateString="Normal";
             probabilityVal=(Math.random()*8)+1;
         }
 
-        if(heartRateVal>=100 && heartRateVal<200) {heartRateString="HIGH";
+        if(heartRateVal>=100 && heartRateVal<200) {heartRateString="High";
             probabilityVal=(Math.random()*20)+10;
         }
     }
 
     void determineBloodPressure(){  //systolic (upper)
+        Log.i("customLog", "AnalyseFragment -> determineBloodPressure(): executed");
 
-        if(bloodPressureVal<120) {bloodPressureString="NORMAL";}
-
-        if(bloodPressureVal>=120 && bloodPressureVal<139) {bloodPressureString="PREHYPERTENSION";}
-
-        if(bloodPressureVal>=140 && bloodPressureVal<159) {bloodPressureString="HYPERTENSION";}
+        if(bloodPressureVal<120) {bloodPressureString="Normal";}
+        else if(bloodPressureVal>=120 && bloodPressureVal<139) {bloodPressureString="Pre-hypertension";}
+        else if(bloodPressureVal>=140 && bloodPressureVal<159) {bloodPressureString="Hypertension";}
     }
 
     void determineBMI(){
-        if(bmiVal<18.5) {bmiString="UNDERWEIGHT";}
+        Log.i("customLog", "AnalyseFragment -> determineBMI(): executed");
 
-        if(bmiVal>=18.5 && bmiVal<24.9) {bmiString="NORMAL";}
-
-        if(bmiVal>=25 && bmiVal<29.9) {bmiString="OVERWEIGHT";}
-
-        else {bmiString="OBESITY";}
+        if(bmiVal<18.5) {bmiString="Underweight";}
+        else if(bmiVal>=18.5 && bmiVal<24.9) {bmiString="Normal";}
+        else if(bmiVal>=25 && bmiVal<29.9) {bmiString="Overweight";}
+        else {bmiString="Obesity";}
     }
 
     void determineAge(){
-        if(ageVal<30){ageString="YOUNG";}
+        Log.i("customLog", "AnalyseFragment -> determineAge(): executed");
 
-        else if(ageVal>=31 && ageVal<=50) {ageString="MIDDLE";}
-
-        else {ageString="ELDERLY";}
+        if(ageVal<30){ageString="Young";}
+        else if(ageVal>=31 && ageVal<=50) {ageString="Middle";}
+        else {ageString="Elderly";}
     }
 
-    void determineMeditation(){
+    void determineStress()      //Using attention and meditation
+    {
+        Log.i("customLog", "AnalyseFragment -> determineStress(): executed");
 
-    }
+        int clusterNum=-1;
+        double att, med, distance, shortestDistance=9999.0;
+        for (int i = 0; i < Clusters.attentionCluster.clusterList.length; i++) {
+            att=Clusters.attentionCluster.clusterList[i];
+            med=Clusters.meditationCluster.clusterList[i];
+            distance = Math.sqrt(Math.pow(attentionVal-att, 2) + Math.pow(meditationVal-med, 2));
+            if(distance<shortestDistance)
+            {
+                shortestDistance=distance;
+                clusterNum=i;
+            }
+        }
+        switch (clusterNum)
+        {
+            case 0:
+                stressString = "No";
+                probabilityVal = probabilityVal + 30;
+                break;
 
-    void determineAttention(){
+            case 1:
+                stressString = "Yes";
+                probabilityVal = probabilityVal + 60;
+                break;
 
+            case 2:
+                stressString = "No";
+                probabilityVal = probabilityVal + 20;
+                break;
+
+            default:
+                stressString ="Null";
+                break;
+        }
     }
 
     void determineCholestrol(){
-        if(cholestrolVal<200) {cholestrolString="YES";}
+        Log.i("customLog", "AnalyseFragment -> determineCholestrol(): executed");
 
+        if(cholestrolVal<200) {cholestrolString="Yes";}
         else {cholestrolString="NO";}
     }
 
@@ -169,8 +194,6 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
 
         Log.i("customLog", "Analyse Fragment: onCreateView() executed");
 
-        //Clusters.loadClusters();
-        Log.i("customLog", "Attention "+Clusters.attentionCluster.cluster1);
         view = inflater.inflate(R.layout.fragment_analyse, container, false);
         auth = FirebaseAuth.getInstance();
         authUid = auth.getUid();
@@ -201,6 +224,7 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
 
                     intent.putExtra("diabetes", dibeticString);
                     intent.putExtra("probability", probabilityVal);
+                    intent.putExtra("stress", stressString);
 
                     //Numerical Values
                     intent.putExtra("heartRate", heartRateVal);
@@ -211,12 +235,12 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
                     intent.putExtra("attention", attentionVal);
 
                     //Decision Values
-                    intent.putExtra("heartRateString", heartRateVal);
-                    intent.putExtra("bloodPressureString", bloodPressureVal);
-                    intent.putExtra("bmiString", bmiVal);
-                    intent.putExtra("ageString", ageVal);
-                    intent.putExtra("meditationString", meditationVal);
-                    intent.putExtra("attentionString", attentionVal);
+                    intent.putExtra("heartRateString", heartRateString);
+                    intent.putExtra("bloodPressureString", bloodPressureString);
+                    intent.putExtra("bmiString", bmiString);
+                    intent.putExtra("ageString", ageString);
+                    intent.putExtra("meditationString", meditationString);
+                    intent.putExtra("attentionString", attentionString);
 
                     startActivity(intent);
                     getActivity().finish();

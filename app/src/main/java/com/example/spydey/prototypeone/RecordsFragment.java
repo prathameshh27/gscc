@@ -48,7 +48,6 @@ public class RecordsFragment<FirebaseRecyclerOptions> extends Fragment {
         // Inflate the layout for this fragment
 
         Log.i("customLog", "RecordFragment -> onCreateView: executed");
-
         view = inflater.inflate(R.layout.fragment_records, container, false);
         auth = FirebaseAuth.getInstance();
         dbRef = FirebaseDatabase.getInstance().getReference("UserData").child(auth.getUid());
@@ -64,12 +63,13 @@ public class RecordsFragment<FirebaseRecyclerOptions> extends Fragment {
             @Override
             protected void onBindViewHolder(@NonNull RecordViewHoder holder, final int position, @NonNull final RecordItem model) {
 
-                String name = getSnapshots().getSnapshot(position).getKey();
-                holder.textView.setText(name);
+                String recordName = getSnapshots().getSnapshot(position).getKey();
+                holder.textView.setText(recordName);
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        String modelStringArray[] = {model.diabetes, model.heartrate, model.bloodpressure, model.bmi, model.age, model.meditation, model.attention, model.probability};
+                        String modelStringArray[] = {model.diabetes, model.heartrate, model.bloodpressure, model.bmi,
+                                model.age, model.stress, model.meditation, model.attention, model.probability};
                         Intent intent = new Intent(getContext(), RecordDataActivity.class);
                         intent.putExtra("modelStringArray", modelStringArray);
                         startActivity(intent);

@@ -86,23 +86,33 @@
 
         <TextView
             style="@style/AppTheme.gridLayoutCol1"
-            android:text="Meditation"
+            android:text="Stress / Anxiety"
             />
 
         <TextView
-            android:id="@+id/meditationResult"
+            android:id="@+id/stressResult"
             style="@style/AppTheme.gridLayoutCol2"
             />
 
-        <TextView
-            style="@style/AppTheme.gridLayoutCol1"
-            android:text="Attention"
-            />
+        <!--<TextView-->
+            <!--style="@style/AppTheme.gridLayoutCol1"-->
+            <!--android:text="Meditation"-->
+            <!--/>-->
 
-        <TextView
-            android:id="@+id/attentionResult"
-            style="@style/AppTheme.gridLayoutCol2"
-            />
+        <!--<TextView-->
+            <!--android:id="@+id/meditationResult"-->
+            <!--style="@style/AppTheme.gridLayoutCol2"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--style="@style/AppTheme.gridLayoutCol1"-->
+            <!--android:text="Attention"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/attentionResult"-->
+            <!--style="@style/AppTheme.gridLayoutCol2"-->
+            <!--/>-->
 
     </GridLayout>
 

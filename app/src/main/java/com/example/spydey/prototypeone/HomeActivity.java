@@ -1,6 +1,7 @@
 package com.example.spydey.prototypeone;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -37,6 +38,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private String fullnameString, usernameString;
     private DatabaseReference databaseUserRef;
     private String uid;
+    private boolean doubleBackPress = false;
 
     public void logout(){
         FirebaseAuth.getInstance().signOut();
@@ -101,8 +103,20 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public void onBackPressed() {
         if(drawer.isDrawerOpen(GravityCompat.START))
             drawer.closeDrawer(GravityCompat.START);
-        else
+        else if(doubleBackPress)
             super.onBackPressed();
+        else
+        {
+            doubleBackPress = true;
+            Toast.makeText(this, "Press again to Exit", Toast.LENGTH_SHORT).show();
+        }
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                doubleBackPress = false;
+            }
+        }, 2000);
     }
 
     @Override

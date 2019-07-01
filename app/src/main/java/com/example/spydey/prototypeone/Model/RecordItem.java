@@ -13,8 +13,8 @@ public class RecordItem extends UserData
     }
 
     public RecordItem(String diabetes, String heartrate, String bloodpressure, String bmi,
-                      String age, String probability, String meditation, String attention) {
-        super(diabetes, heartrate, bloodpressure, bmi, age, probability, meditation, attention);
+                      String age, String probability, String stress, String meditation, String attention) {
+        super(diabetes, heartrate, bloodpressure, bmi, age, probability, stress, meditation, attention);
 
         Log.i("customLog", "RecordItem -> Parametric Constructor: "+diabetes+" "
                 +heartrate+" "+bloodpressure+" "+bmi+" "+age+" "+probability+" "+meditation+" "+attention);

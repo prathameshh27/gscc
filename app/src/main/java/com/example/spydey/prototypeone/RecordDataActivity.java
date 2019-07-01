@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class RecordDataActivity extends AppCompatActivity {
 
     public TextView diabetesTextView, heartRateTextView, bloodPressureTextView, BMITextView,
-            ageTextView, attentionTextView, meditationTextView, probabilityTextView;
+            ageTextView, stressTextView, attentionTextView, meditationTextView, probabilityTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,22 +18,21 @@ public class RecordDataActivity extends AppCompatActivity {
 
         Log.i("customLog", "RecordDataActivity -> onCreate(): exectuted");
 
+        //Intent from Record Fragment
         Intent intent = getIntent();
         String modelStringArray[] = intent.getStringArrayExtra("modelStringArray");
 
         Log.i("customLog", "RecordDataActivity -> onCreate(): IntendData");
-        for (String data:modelStringArray)
-        {
-            Log.i("customLog", "modelStringArray[]: "+data);
-        }
+        for (String data:modelStringArray) { Log.i("customLog", "modelStringArray[]: "+data); }
 
         diabetesTextView = findViewById(R.id.diabetesRecordData);
         heartRateTextView = findViewById(R.id.heartRateRecordData);
         bloodPressureTextView = findViewById(R.id.bloodPressureRecordData);
         BMITextView = findViewById(R.id.BMIRecordData);
         ageTextView = findViewById(R.id.ageRecordData);
-        attentionTextView = findViewById(R.id.attentionRecordData);
-        meditationTextView = findViewById(R.id.meditationRecordData);
+        stressTextView = findViewById(R.id.stressRecordData);
+        //attentionTextView = findViewById(R.id.attentionRecordData);
+        //meditationTextView = findViewById(R.id.meditationRecordData);
         probabilityTextView = findViewById(R.id.probabilityRecordData);
 
         diabetesTextView.setText(modelStringArray[0]);
@@ -41,9 +40,9 @@ public class RecordDataActivity extends AppCompatActivity {
         bloodPressureTextView.setText(modelStringArray[2]);
         BMITextView.setText(modelStringArray[3]);
         ageTextView.setText(modelStringArray[4]);
-        attentionTextView.setText(modelStringArray[5]);
-        meditationTextView.setText(modelStringArray[6]);
-        probabilityTextView.setText(modelStringArray[7]+"% chances of having a heart attack.");
-
+        stressTextView.setText(modelStringArray[5]);
+        //attentionTextView.setText(modelStringArray[6]);
+        //meditationTextView.setText(modelStringArray[7]);
+        probabilityTextView.setText(modelStringArray[8]+"% chances of having a heart attack.");
     }
 }

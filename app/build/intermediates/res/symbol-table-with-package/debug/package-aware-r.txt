@@ -1149,8 +1149,6 @@ id analyseWeight
 id analyseWeightEditText
 id analysisMenuButton
 id async
-id attentionRecordData
-id attentionResult
 id auto
 id barrier
 id beginning
@@ -1241,8 +1239,6 @@ id login_button
 id logo_text
 id masked
 id media_actions
-id meditationRecordData
-id meditationResult
 id message
 id middle
 id mini
@@ -1329,6 +1325,8 @@ id src_over
 id standard
 id start
 id status_bar_latest_event_content
+id stressRecordData
+id stressResult
 id stretch
 id submenuarrow
 id submitResultButton

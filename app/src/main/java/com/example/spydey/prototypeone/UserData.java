@@ -3,7 +3,7 @@ package com.example.spydey.prototypeone;
 import android.util.Log;
 
 public class UserData {
-    protected String diabetes, heartrate, bloodpressure, bmi, age, probability, meditation, attention;
+    protected String diabetes, heartrate, bloodpressure, bmi, age, probability, stress, meditation, attention;
 
     public UserData() {
         this.diabetes = " ";
@@ -12,18 +12,21 @@ public class UserData {
         this.bmi = " ";
         this.age = " ";
         this.probability = " ";
+        this.stress = " ";
         this.meditation = " ";
         this.attention = " ";
         Log.i("customLog", "UserData -> Default Constructor: executed");
     }
 
-    public UserData(String diabetes, String heartrate, String bloodpressure, String bmi, String age, String probability, String meditation, String attention) {
+    public UserData(String diabetes, String heartrate, String bloodpressure, String bmi, String age,
+                    String probability, String stress, String meditation, String attention) {
         this.diabetes = diabetes;
         this.heartrate = heartrate;
         this.bloodpressure = bloodpressure;
         this.bmi = bmi;
         this.age = age;
         this.probability = probability;
+        this.stress = stress;
         this.meditation = meditation;
         this.attention = attention;
 
