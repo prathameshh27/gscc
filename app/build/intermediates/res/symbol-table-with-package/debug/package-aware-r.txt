@@ -724,6 +724,7 @@ color switch_thumb_normal_material_light
 color textBackgroundDark
 color textBackgroundLight
 color textColorDark
+color textColorHint
 color textColorLight
 color textColorMedium
 color tooltip_background_dark
@@ -1062,11 +1063,16 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_analysis
+drawable ic_date
 drawable ic_displaypicture
 drawable ic_dropdown
+drawable ic_email
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_name
+drawable ic_password
+drawable ic_phone
 drawable ic_records
 drawable ic_signout
 drawable mtrl_snackbar_background

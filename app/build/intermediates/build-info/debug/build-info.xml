@@ -5,44 +5,86 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.4.1"
-    timestamp="1560837289564"
+    timestamp="1562062594383"
     token="-5910018187142820890"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1685" />
+        duration="10682" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="157" />
+        duration="295" />
     <task
         name="verifier"
-        duration="65" />
+        duration="533" />
 
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
     <artifact
         location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1560837163305"
+        timestamp="1562059308940"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
         <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -51,14 +93,17 @@
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
-        <artifact
-            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1562062594383"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
@@ -66,17 +111,32 @@
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1560837289564"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
             location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\WarMachine\Coding\Android_workstation\prototypeOne\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

@@ -58,7 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="@string/login_email_hint"
-            android:text="prathameshh27@gmail.com"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="5dp"
             android:inputType="textPersonName"
             android:background="@drawable/rounded_edittext"
             />
@@ -68,9 +69,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="5dp"
             android:hint="@string/password_hint"
             android:inputType="textPassword"
-            android:text="abc123"
             android:background="@drawable/rounded_edittext"
             />
 

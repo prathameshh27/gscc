@@ -95,12 +95,6 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
         else { return false; }
     }
 
-    void determineDibetes(){
-        Log.i("customLog", "AnalyseFragment -> determineDibetes(): executed");
-        if(dibeticString.equals("YES")) { }
-        else { }
-    }
-
     void determineHeartRate(){
         Log.i("customLog", "AnalyseFragment -> determineHeartRate(): executed");
         if(heartRateVal>=0 && heartRateVal<60) {heartRateString="Low";
@@ -116,29 +110,64 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
         }
     }
 
+    void determineDibetes(){
+        Log.i("customLog", "AnalyseFragment -> determineDibetes(): executed");
+        if(dibeticString.equals("YES")) {
+            probabilityVal = probabilityVal + 10;
+        }
+        else { }
+    }
+
     void determineBloodPressure(){  //systolic (upper)
         Log.i("customLog", "AnalyseFragment -> determineBloodPressure(): executed");
 
         if(bloodPressureVal<120) {bloodPressureString="Normal";}
-        else if(bloodPressureVal>=120 && bloodPressureVal<139) {bloodPressureString="Pre-hypertension";}
-        else if(bloodPressureVal>=140 && bloodPressureVal<159) {bloodPressureString="Hypertension";}
+
+        else if(bloodPressureVal>=120 && bloodPressureVal<139) {
+            bloodPressureString="Pre-hypertension";
+            probabilityVal = probabilityVal + 5;
+        }
+
+        else if(bloodPressureVal>=140 && bloodPressureVal<159) {
+            bloodPressureString="Hypertension";
+            probabilityVal = probabilityVal + 10;
+        }
     }
 
     void determineBMI(){
         Log.i("customLog", "AnalyseFragment -> determineBMI(): executed");
 
         if(bmiVal<18.5) {bmiString="Underweight";}
-        else if(bmiVal>=18.5 && bmiVal<24.9) {bmiString="Normal";}
-        else if(bmiVal>=25 && bmiVal<29.9) {bmiString="Overweight";}
-        else {bmiString="Obesity";}
+
+        else if(bmiVal>=18.5 && bmiVal<24.9) {
+            bmiString="Normal";
+        }
+
+        else if(bmiVal>=25 && bmiVal<29.9) {
+            bmiString="Overweight";
+            probabilityVal = probabilityVal + 5;
+        }
+
+        else {
+            bmiString="Obesity";
+            probabilityVal = probabilityVal + 10;
+        }
     }
 
     void determineAge(){
         Log.i("customLog", "AnalyseFragment -> determineAge(): executed");
 
         if(ageVal<30){ageString="Young";}
-        else if(ageVal>=31 && ageVal<=50) {ageString="Middle";}
-        else {ageString="Elderly";}
+
+        else if(ageVal>=30 && ageVal<=50) {
+            ageString="Middle";
+            probabilityVal = probabilityVal + 5;
+        }
+
+        else {
+            ageString="Elderly";
+            probabilityVal = probabilityVal + 10;
+        }
     }
 
     void determineStress()      //Using attention and meditation
@@ -161,17 +190,17 @@ public class AnalyseFragment extends Fragment implements AdapterView.OnItemSelec
         {
             case 0:
                 stressString = "No";
-                probabilityVal = probabilityVal + 30;
+                //probabilityVal = probabilityVal + 30;
                 break;
 
             case 1:
                 stressString = "Yes";
-                probabilityVal = probabilityVal + 60;
+                probabilityVal = probabilityVal + 20;
                 break;
 
             case 2:
                 stressString = "No";
-                probabilityVal = probabilityVal + 20;
+                //probabilityVal = probabilityVal + 20;
                 break;
 
             default:

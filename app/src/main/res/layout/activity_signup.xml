@@ -23,7 +23,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_edittext"
-            android:hint="Firstname"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="5dp"
+            android:hint="First Name"
             android:inputType="textPersonName"
             />
 
@@ -33,7 +35,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_edittext"
-            android:hint="Lastname"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="5dp"
+            android:hint="Last Name"
             android:inputType="textPersonName"
             />
 
@@ -43,8 +47,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="5dp"
             android:maxLength="10"
-            android:hint="Phone No."
+            android:hint="Phone Number"
             android:inputType="phone"
             />
 
@@ -54,7 +60,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_edittext"
-            android:hint="Email addr."
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:hint="Email Address"
             android:inputType="textEmailAddress"
             />
 
@@ -64,6 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="5dp"
             android:hint="Password"
             android:inputType="textPassword"
             />
@@ -74,7 +84,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_edittext"
-            android:hint="Birth date"
+            android:drawableLeft="@drawable/ic_date"
+            android:drawablePadding="5dp"
+            android:hint="Birth Date"
             android:maxLength="10"
             android:inputType="date"
             />
